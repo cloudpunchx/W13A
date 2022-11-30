@@ -1,22 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-
+    <PageHeader/>
+    <PageBody/>
+    <PageFooter/>
   </div>
 </template>
 
 <script>
-
+import PageHeader from '@/components/PageHeader.vue';
+import PageBody from '@/components/PageBody.vue';
+import PageFooter from '@/components/PageFooter.vue';
 
 export default {
   name: 'App',
   components: {
-    
+    PageHeader,
+    PageBody,
+    PageFooter
   }
 }
 </script>
 
+
+
 <style>
+html{
+  background-color: lavender;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
